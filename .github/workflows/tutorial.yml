@@ -34,6 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+      
+      # Runs a command to show the list of directories
       - name: List current directory contents
         run: ls -la
+
+      # Runs a script to create files
+      - name: Run a scrip to create files
+        run: bash script.sh
