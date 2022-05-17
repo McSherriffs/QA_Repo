@@ -25,6 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+  
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
@@ -42,3 +44,12 @@ jobs:
       # Runs a script to create files
       - name: Run a scrip to create files
         run: bash script.sh
+      
+      # removing file 2
+      - name: remove file2
+        run: rm file2.txt
+        
+        # Runs a command to show the list of directories
+      - name: List current directory contents
+        run: ls -la
+        
